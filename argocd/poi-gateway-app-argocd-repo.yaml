@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: hpgrahsl-demo5-poi-gateway-app-repo
+  namespace: janus-argocd
+  labels:
+    argocd.argoproj.io/secret-type: repository
+stringData:
+  url: https://github.com/Summit23DevLab/hpgrahsl-demo5-gateway-gitops
